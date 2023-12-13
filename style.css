@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+
+body {
+    height: 100%;
+    display: flex;
+    justify-content: column;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.Text-Container {
+    background-color: #222324 !important;
+    width: 100%;
+    padding: 20px; /* Ajusta el relleno según sea necesario */
+    text-align: center; /* Alinea el texto al centro si es necesario */
+}
+
+.Contact {
+    flex: 1;
+    background-color: #222324 !important;
+    padding: 20px; /* Ajusta el relleno según sea necesario */
+    width: 100%;
+    text-align: center; /* Alinea el texto al centro si es necesario */
+    color: white;
+    display: flex;
+    flex-direction: column; /* Asegura que los elementos se apilen verticalmente */
+    margin-top: 80px; /* Ajusta el margen superior según sea necesario */
+    background-color: 100%;
+}
+
+.contactForm {
+    margin-top: 50px;
+}
+
+.The-Brands {
+    color: white;
+    padding: 20px;
+    font-weight: bold;
+}
+
+.content-container {
+    display: flex;
+    flex-direction: column; /* Asegura que los elementos se apilen verticalmente */
+    align-items: flex-start; /* Alinea los elementos a la izquierda */
+    margin-top: 80px; /* Ajusta el margen superior según sea necesario */
+    background-image: url('Images/forge.jpg'); /* Reemplaza 'ruta-de-tu-imagen.jpg' con la ruta de tu imagen */
+    background-size: 100% 100%; /* Ajusta según sea necesario */
+    background-position: center; /* Ajusta según sea necesario */
+    color: white; /* Ajusta el color del texto para que sea legible en la imagen de fondo */
+    padding: 20px;
+    min-height: 100vh;
+    width: 100%; /* Ajusta según sea necesario */
+}
+
+.Singular-Edge {
+    display: flex; /* Agrega esta línea */
+    justify-content: flex-start; /* Añade esta línea para alinear a la izquierda */
+    align-items: center; /* Puedes ajustar esto según sea necesario */
+    margin-top: 50vh;
+}
+
+.logo {
+    font-size: 2em;
+    color: #000000;
+    user-select: none;
+}
+
+.navigation a {
+    position: relative;
+    font-size: 1.1em;
+    color: #000000;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+}
+
+.navigation a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: #000000;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .2s;
+}
+.navigation a:hover::after{
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+table {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    color: white;
+    border-spacing: 30px;
+}
+
+.larger-cell {
+    width: 650px;
+    text-align: justify;
+    text-align-last: center;    
+}
+
+.Tojiro-logo .Miyabi-logo {
+    width: 400px;
+    height: auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input, textarea {
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+input {
+    width: 300px;
+}
+
+textarea {
+    width: 2000px;
+}
+
+button {
+    width: 50px; /* O ajusta según sea necesario */
+}
+
+form {
+    margin-bottom: 200px;
+}
